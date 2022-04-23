@@ -6,7 +6,7 @@ int main()
     sq=n*n;
     while(sq!=0)
     {
-        d=sq%10;
+        d=sq%10,
         s+=d;
         sq=sq/10;
     }
