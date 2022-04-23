@@ -1,27 +1,22 @@
 #include<stdio.h>
-
- 
 int main()
 {
-    int number,original_number,sum=0;
-    int digit;
- 
-    
-    scanf("%d",&original_number);
- 
-    number=original_number;//copying the original number
- 
-    while(number!=0)
+    int num;
+    int rem=0,sum=0,n;
+    scanf("%d",&num);
+    //make a copy of num and store it in varible n
+    n=num;
+    //calculate sum of digits
+    while(num>0)
     {
-        digit=number%10;
-        sum+=digit;
-        number=number/10;
+    rem=num%10;
+    sum=sum+rem;
+    num=num/10;
     }
- 
-    if(original_number%sum==0)
-        printf("True");
+    //checks whether number is divisible by sum of digits
+    if(n%sum==0)
+    printf("True");
     else
-        printf("False");
- 
+    printf("False");
     return 0;
 }
