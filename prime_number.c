@@ -1,15 +1,21 @@
-#include<stdio.h>
-int main()
-{
-int i,n, factors=0;
-scanf("%d",&n);
-for (i=1;i<=n;i++)
-{
-if(n% i==0){factors=factors+1;}
-}
-if(factors==2)
+#include<stdio.h> 
+
+int main(){ 
+
+int n,i,m=0,flag=0; 
+//printf("Enter the number to check prime:"); 
+scanf("%d",&n); 
+m=n/2; 
+for(i=2;i<=m;i++) 
+{ 
+if(n%i==0) 
+{ 
+printf("not a prime"); 
+flag=1; 
+break; 
+} 
+} 
+if(flag==0) 
 printf("prime");
-else
-printf("not a prime");
 return 0;
 }
