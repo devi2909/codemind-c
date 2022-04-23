@@ -2,13 +2,16 @@
 #include<math.h>
 int main()
 {
-    int n,m;
-    float i;
-    scanf("%d",&n);
-    i=sqrt(n);
-    m=i;
-    if(i==m)
+    int num;
+    int iVar;
+    float fVar;
+    //print("enter an integer number:");
+    scanf("%d",&num);
+    fVar=sqrt((double)num);
+    iVar=fVar;
+    if(iVar==fVar)
     printf("True");
     else
     printf("False");
+    return 0;
 }
