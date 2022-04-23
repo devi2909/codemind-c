@@ -1,18 +1,16 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-  int n1, n2;
-  
-  scanf("%d %d", &n1, &n2);
-
-  while (n1 != n2) {
-    if (n1 > n2)
-      n1 -= n2;
+    int a,b,t,i=0;
+    scanf("%d%d",&a,&b);
+    for(t=2;t<=a&&t<=b;t++)
+    {
+        if(a%t==0&&b%t==0)
+        {i=t;}
+    }
+    if(i!=0)
+    printf("%d",i);
     else
-      n2 -= n1;
-  }
-
-  printf("%d", n1);
-
-  return 0;
+    printf("1");
+    return 0;
 }
