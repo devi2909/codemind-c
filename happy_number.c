@@ -2,7 +2,6 @@
 int main()
 {
     int num;
-    
     scanf("%d",&num);
     int sum=0,rem;
      while(sum!=1 && sum!=4)
